@@ -17,6 +17,8 @@ public:
     
     Mystring &operator=(const Mystring &rhs);     // Copy assignment
     Mystring &operator=(Mystring &&rhs);           // Move assignment
+	
+	bool operator==(const Mystring &rhs);			//Equality operator
     
     void display() const;
     

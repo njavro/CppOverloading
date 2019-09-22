@@ -10,12 +10,15 @@ int main() {
     cout << boolalpha << endl;
     Mystring a {"frank"};
     Mystring b {"frank"};
-
+	
+	
     cout << (a==b) << endl;         // true
-    cout << (a!=b) << endl;          // false
+    //cout << (a!=b) << endl;          // false
     
     b = "george";
     cout << (a==b) << endl;         // false
+	
+	/*
     cout << (a!=b) << endl;          // true
      cout << (a<b) << endl;          // true
     cout << (a>b) << endl;           // false
@@ -59,7 +62,7 @@ int main() {
     result = s++;
     cout << s << endl;                  // FRANK
     cout << result << endl;           // frank
-    
+    */
 
     return 0;
 }

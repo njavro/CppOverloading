@@ -90,3 +90,13 @@ std::istream &operator>>(std::istream &in, Mystring &rhs) {
     return in;
 }
 
+
+//Overload equality operator
+bool Mystring::operator==(const Mystring &rhs){
+	if(strcmp(this->str,rhs.str) == 0){
+		return true;
+	}else{
+		return false;
+	}
+}
+
