@@ -64,7 +64,7 @@ int main() {
     */
 	std::cout << "Test sample!" << "\n";
 	
-	std::cout << "This is test added from gitHub!\n";
+	std::cout << "This is test added from gitHub!!\n";
     return 0;
 }
 
