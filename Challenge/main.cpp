@@ -62,6 +62,7 @@ int main() {
     cout << result << endl;           // frank
     
     */
+	std::cout << "Test sample!" << "\n";
     return 0;
 }
 
