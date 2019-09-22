@@ -93,7 +93,7 @@ std::istream &operator>>(std::istream &in, Mystring &rhs) {
 
 //Overload equality operator
 bool Mystring::operator==(const Mystring &rhs){
-	if(strcmp(this->str,rhs.str) == 0){
+	if(strcmp(str,rhs.str) == 0){
 		return true;
 	}else{
 		return false;
@@ -101,10 +101,24 @@ bool Mystring::operator==(const Mystring &rhs){
 }
 
 bool Mystring::operator !=(const Mystring &rhs){
-	if(strcmp(this->str,rhs.str) != 0){
+	if(strcmp(str,rhs.str) != 0){
 		return true;
 	}else{
 		return false;
 	}
 }
+
+Mystring Mystring::operator+(const Mystring &rhs){
+	//Length of new char array
+	std::size_t newLength = std::strlen(str) + std::strlen(rhs.str) + 1;
+	char *temp = new char [newLength];
+	//Copy LHS to temp
+	std::strcpy(temp,str);
+	//Add RHS to LHS via std::strcat
+	std::strcat(temp,rhs.str);
+	Mystring returnObject{temp};
+	delete [] temp;
+	return returnObject;
+}
+
 

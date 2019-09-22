@@ -14,9 +14,9 @@ Here is a list of some of the operators that you can overload for this class:
 -       - unary minus. Returns the lowercase version of the object's string
            -s1
 ==    - returns true if the two strings are equal
-           (s1 == s2)
+           (s1 == s2) DONE
 !=     - returns true if the two strings are not equal 
-           (s1 != s2)
+           (s1 != s2) DONE
 <      - returns true if the lhs string is lexically less than the rhs string
            (s1 < s2)
 >      - returns true if the lhs string is lexically greater than the rhs string

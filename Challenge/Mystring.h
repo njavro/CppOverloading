@@ -18,8 +18,10 @@ public:
     Mystring &operator=(const Mystring &rhs);     // Copy assignment
     Mystring &operator=(Mystring &&rhs);           // Move assignment
 	
+	
 	bool operator==(const Mystring &rhs);			//Equality operator
 	bool operator!=(const Mystring &rhs);		   //Inequality operator
+	Mystring operator+(const Mystring &rhs);	  //Addition operator
     
     void display() const;
     

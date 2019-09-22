@@ -19,16 +19,28 @@ int main() {
     cout << (a!=b) << endl;          // true
 	
 	
+	Mystring s1 {"FRANK"};
+	s1 = s1 + "**__***";
+    cout << s1 << endl;               // frank*****  
+	
+	Mystring t1 {"Anthony"};
+	Mystring t2 {"Soprano"};
+	t1 = t1 + " " + t2;
+	std::cout << t1 << endl;	//Anthony Soprano
+	
+	t1 = t1 + " " + "has no respect for this thing!"; //Anthony Soprano has no respect for this thing!
+	std::cout << t1 << endl;
+	
+	
+	
+	
 	/*
 	cout << (a<b) << endl;          // true
     cout << (a>b) << endl;           // false
     
     Mystring s1 {"FRANK"};
     s1 = -s1;       
-    cout << s1 << endl;               // frank              
-
-    s1 = s1 + "*****";
-    cout << s1 << endl;               // frank*****       
+    cout << s1 << endl;               // frank                   
     
     s1 += "-----";                        // frank*****-----
     cout << s1 << endl;
