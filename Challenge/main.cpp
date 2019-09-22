@@ -13,14 +13,14 @@ int main() {
 	
 	
     cout << (a==b) << endl;         // true
-    //cout << (a!=b) << endl;          // false
-    
+    cout << (a!=b) << endl;          // false
     b = "george";
     cout << (a==b) << endl;         // false
+    cout << (a!=b) << endl;          // true
+	
 	
 	/*
-    cout << (a!=b) << endl;          // true
-     cout << (a<b) << endl;          // true
+	cout << (a<b) << endl;          // true
     cout << (a>b) << endl;           // false
     
     Mystring s1 {"FRANK"};

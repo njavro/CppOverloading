@@ -100,3 +100,11 @@ bool Mystring::operator==(const Mystring &rhs){
 	}
 }
 
+bool Mystring::operator !=(const Mystring &rhs){
+	if(strcmp(this->str,rhs.str) != 0){
+		return true;
+	}else{
+		return false;
+	}
+}
+

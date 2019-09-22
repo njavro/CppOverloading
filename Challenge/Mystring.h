@@ -19,6 +19,7 @@ public:
     Mystring &operator=(Mystring &&rhs);           // Move assignment
 	
 	bool operator==(const Mystring &rhs);			//Equality operator
+	bool operator!=(const Mystring &rhs);		   //Inequality operator
     
     void display() const;
     
